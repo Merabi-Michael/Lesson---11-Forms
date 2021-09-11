@@ -1,55 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="learning Web Development">
+  <meta name="keywords" content="HTML, CSS, flex, div, label, input">
+  <meta name="author" content="Merab Zamtaradze">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://kit.fontawesome.com/962011f00c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
+
 <body>
   <header>
     <div class="header-image">
-      <h1 class="H1">Contact</h1>
-      <nav>
-        <ul>
-          <li><a class="home" href="#">Home</a></li>
-          <li><a class="Contact" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="nav-flex container">
+        <a class="ZH" href="#">Zetta Hotels</a>
+        <nav class="nav-flex0 withresonsive">
+          <ul>
+            <li><a class="LI1" href="#">HOME</a></li>
+          </ul>
+          <ul class="rmi">
+            <li><a class="LI" href="#">Rooms</a></li>
+            <img src="Images/png.svg" alt="png-image">
+          </ul>
+          <ul>
+            <li><a class="LI" href="#">RESTAURANT</a></li>
+          </ul>
+          <ul>
+            <li><a class="LI" href="#">ABOUT US</a></li>
+          </ul>
+          <ul>
+            <li><a class="LI" href="#">BLOG</a></li>
+          </ul>
+          <ul>
+            <li><a class="LI" href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="burger-bar">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="res">
+        <h1 class="H1">Contact</h1>
+        <div class="sizing">
+          <ul class="nav-block">
+            <li class="li-block01"><a class="home" href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
   </header>
   <section>
     <div class="container">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.123921705683!2d-80.84056260127807!3d35.22828507854541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a024bc5716dd%3A0x709e0e7838b9b467!2sLevine%20Museum%20of%20the%20New%20South!5e0!3m2!1ska!2sge!4v1631020838788!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.123921705683!2d-80.84056260127807!3d35.22828507854541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a024bc5716dd%3A0x709e0e7838b9b467!2sLevine%20Museum%20of%20the%20New%20South!5e0!3m2!1ska!2sge!4v1631020838788!5m2!1ska!2sge"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p class="P">Contact</p>
       <h2 class="H2">Contact us to get free support</h2>
-      <form action="#">
+      <form class="form-flex" action="#">
         <div class="block">
-          <label for="SMS"></label>
           <textarea class="txtarea" name="Description" id="SMS" placeholder="Description"></textarea>
         </div>
         <div class="block1">
-          <div class="form-wrapper">
+          <div>
             <label for="Subject"></label>
             <input class="input-wrapper" type="text" id="Subject" name="Subject" placeholder="Subject">
           </div>
-          <div class="form-wrapper">
+          <div>
             <label for="Name / Surname"></label>
             <input class="input-wrapper" type="text" id="NameSurname" name="Name/ Surname" placeholder="Name / Surname">
           </div>
-          <div class="form-wrapper">
+          <div>
             <label for="Email"></label>
             <input class="input-wrapper" type="email" id="Email" name="Email" placeholder="Email">
           </div>
-          <div class="form-wrapper">
+          <div>
             <button class="btn" type="button>">Send<i class="far fa-paper-plane"></i></button>
           </div>
         </div>
       </form>
     </div>
   </section>
+  <section>
+    <div class="container">
+      <div class="main-div">
+        <div class="child-div">
+          <div class="blue-icon">
+            <i class="far fa-envelope"></i>
+          </div>
+          <h3 class="h3">Email</h3>
+          <ul class="centering">
+            <li class="YH">example@yahoo.com</li>
+            <li class="YH">examplemail2@yahoo.com</li>
+          </ul>
+        </div>
+        <div class="child-div">
+          <div class="blue-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3 class="h3">Phone</h3>
+          <ul class="centering">
+            <li class="YH">+0 320 422 4254</li>
+            <li class="YH">+0 342 552 523</li>
+          </ul>
+        </div>
+        <div class="child-div">
+          <div class="blue-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="h3">Location</h3>
+          <ul class="centering">
+            <li class="YH">Main Str Chicago Ilinois</li>
+            <li class="YH">Main Street New York City</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 3 -->
+  <section>
+    <h6 class="IMG">Photos</h6>
+    <h2 class="title">See our latest photos from restaurant and hotel</h2>
+    <div class="photo-size">
+      <img class="withres" src="Images/Coast.jpg" alt="coast-image">
+      <img class="withres" src="Images/homeview.jpg" alt="view-image">
+      <img class="withres" src="Images/stair.jpg" alt="stair-image">
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="backcolor">
+    <div class="container">
+      <div class="footer-div">
+        <div class="footer-box1">
+          <h5 class="HOTEL">Zetta Hotels</h5>
+          <p class="txt">Our hotel is an image of quality and profesionalism combined with hard work and precision. You
+            can expect only the best services from our staff.
+          </p>
+          <div>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+          </div>
+        </div>
+        <div class="footer-box2">
+          <h6 class="h6">Useful Links</h6>
+          <ul>
+            <li class="list">Blog</li>
+            <li class="list">Rooms</li>
+            <li class="list">Gift Card</li>
+            <li class="list">Testimonials</li>
+          </ul>
+        </div>
+        <div class="footer-box3">
+          <h6 class="h6">Privacy</h6>
+          <ul>
+            <li class="list">Career</li>
+            <li class="list">About us</li>
+            <li class="list">Contact Us</li>
+            <li class="list">Services</li>
+          </ul>
+        </div>
+        <div class="footer-box4">
+          <h6 class="information">Contact Info</h6>
+          <ul>
+            <li class="li001"><i class="far fa-envelope Gmail"></i> <a class="coloring" href="#">example@yahoo.com</li>
+            <li class="li001"><i class="fas fa-phone-alt Phone"></i> <a class="coloring" href="tel:#">+0 320 422
+                4254</a></li>
+            <li class="li001"><i class="fas fa-map-marker-alt Pins"></i> <a class="coloring"
+                href="https://www.google.com/maps/place/Levine+Museum+of+the+New+South/@35.2283333,-80.8410776,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a024bc5716dd:0x709e0e7838b9b467!8m2!3d35.2284098!4d-80.8387797"
+                target="_blank">Main Str Chicago Ilinois</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="last-div">
+        <p class="last-P">Copyright ©2020 All rights reserved | This template is made with love by Marian</p>
+        <a class="Aclass" href="#">www.portfolioname.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
